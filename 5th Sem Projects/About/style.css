@@ -1,0 +1,259 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #070b3f;
+}
+
+/* NavBar */
+
+header{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav {
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  margin-right: 20px;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.nav li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.nav li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.nav li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.nav li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Protest Guerrilla", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ccc;
+}
+
+.nav .active {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.nav li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav li:hover::before {
+  transform: scaleX(1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* AI CODE END */
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  padding: 13px;
+  background-color: #6b6b6b;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+.menu-toggle:hover {
+  background-color: #444;
+  color: #fff;
+}
+/* Responsive  */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+  .nav{
+      display: none;
+  }
+  
+}
+
+.sidenav {
+  height: 100%; /* Full-height */
+  width: 0; /* Set to 0 width initially */
+  position: fixed; /* Fixed Sidebar */
+  top: 0;
+  left: 0;
+  background-color: #333; /* Dark background color */
+  overflow-x: hidden; /* No horizontal scroll */
+  transition: 0.5s; /* Transition effect for sliding */
+  padding-top: 60px; /* Padding at the top */
+}
+
+.sidenav a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #575757;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.main-content {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.username{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.username .logout {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #6b6b6b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    font-family: "Protest Guerrilla", sans-serif;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .logout:hover {
+    transform: scale(1.1);
+    background-color: #b6b6b6;
+  }
+/* Container Styles */
+
+/* style.css */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 265px;
+    object-fit: contain;
+}
+
+.slide h3 {
+    font-family: "Protest Guerrilla", sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.slide p {
+    font-size: 18px;
+    color: #666;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}

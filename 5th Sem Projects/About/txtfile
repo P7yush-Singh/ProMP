@@ -1,0 +1,229 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Box Styles */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Content Styles */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image Styles */
+
+.content img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Heading Styles */
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Paragraph Styles */
+
+.content p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <img src="img.jpeg" >
+                <h3>POOJA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 2nd Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img1.jpg" >
+                <h3>PIYUSH</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 3rd Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img2.jpg" >
+                <h3>SINGH</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 4th Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img3.jpg" >
+                <h3>POOJA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+/* 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box active">
+            <div class="content">
+                <img src="img.jpeg" >
+                <h3>POOJA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 2nd Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img1.jpg" >
+                <h3>PIYUSH</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 3rd Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img2.jpg" >
+                <h3>SINGH</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+
+        <!-- 4th Image -->
+        <div class="box">
+            <div class="content">
+                <img src="img3.jpg" >
+                <h3>POOJA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae maxime culpa nobis</p>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html> */
+
+
+/* 
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container Styles */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Box Styles */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Content Styles */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image Styles */
+
+.content img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Heading Styles */
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Paragraph Styles */
+
+.content p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    padding-bottom: 20px;
+} */
